@@ -1,1 +1,6 @@
 _env
+/dist/
+/build/
+*.pyc
+__pycache__/
+.vscode
