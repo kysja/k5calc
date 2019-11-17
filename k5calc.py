@@ -19,7 +19,6 @@ def enter(event):
 
     prev['text'] = val
     if not prev.grid_info():
-        # entry.grid(pady=(10,0))
         prev.grid(row=3, column=2, padx=20, pady=(0,30), sticky="e")
         prev.bind('<Button-1>', prev2entry)
     
