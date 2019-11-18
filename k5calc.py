@@ -42,14 +42,14 @@ def history2entry(val):
 
 
 
-def minim():
-    win.withdraw()
-    keyboard.add_hotkey(config['hotkey'], reappear)
 
-def reappear(): 
-    win.deiconify()
-    win.focus_force()
-    entry.focus_set()
+def winhideshow():
+    if win.state() == 'normal':
+        win.withdraw()
+    else:
+        win.deiconify()
+        win.focus_force()
+        entry.focus_set()
 
 def dragwin(event):
     x = win.winfo_pointerx() - win._offsetx
@@ -84,6 +84,7 @@ win.wm_attributes('-topmost', True)
 # win.wm_attributes('-transparentcolor', '#3764ab')
 win.attributes('-toolwindow', True)
 win.bind('<Escape>', lambda x: minim())
+keyboard.add_hotkey(config['hotkey'], winhideshow)
 
 
 logoimg = tk.PhotoImage(file="logo.png")
