@@ -6,15 +6,19 @@ from configparser import ConfigParser
 
 def enter(event):
     val = entry.get()
-    lexer = CalcLexer()
-    parser = CalcParser()
-    res = round(parser.parse(lexer.tokenize(val)),12)
-    res = int(res) if res == int(res) else res
-    entry.delete(0, tk.END)
-    entry.insert(tk.END, res)
-    history.insert(0, val + "=" + str(res))
-    if len(history) > 15: history.pop(15)
-    historydisplay()
+    
+    if val.replace(".", "", 1).isdigit():
+        entry.select_range(0,tk.END)
+    else:
+        lexer = CalcLexer()
+        parser = CalcParser()
+        res = round(parser.parse(lexer.tokenize(val)),12)
+        res = int(res) if res == int(res) else res
+        entry.delete(0, tk.END)
+        entry.insert(tk.END, res)
+        history.insert(0, val + "=" + str(res))
+        if len(history) > 15: history.pop(15)
+        historydisplay()
 
 def historydisplay():
     for i in range(0,len(histlabels)):  
@@ -108,7 +112,7 @@ histbtn = tk.Button(win, text="History", command=historytoggle, relief="flat")
 histbtnimg = tk.PhotoImage(file="history.png")
 histbtn.config(image=histbtnimg)
 
-minbtn = tk.Button(win, text="Minimize", command=lambda: minim(), relief="flat")
+minbtn = tk.Button(win, text="Minimize", command=winhideshow, relief="flat")
 minimg = tk.PhotoImage(file="min.png")
 minbtn.config(image=minimg)
 minbtn.grid(row=2, column=4, padx=5, pady=20, sticky="w")

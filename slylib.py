@@ -21,7 +21,7 @@ class CalcLexer(Lexer):
     #     t.value = int(t.value)   # Convert to a numeric value
     #     return t
 
-    FLOAT = r'\d+\.\d+'
+    FLOAT = r'\d*\.\d+'
     INT = r'\d+'
 
     # Special symbols
