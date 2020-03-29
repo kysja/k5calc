@@ -87,7 +87,7 @@ win.overrideredirect(1)
 win.wm_attributes('-topmost', True)
 # win.wm_attributes('-transparentcolor', '#3764ab')
 win.attributes('-toolwindow', True)
-win.bind('<Escape>', lambda x: minim())
+win.bind('<Escape>', lambda x: winhideshow())
 keyboard.add_hotkey(config['hotkey'], winhideshow)
 
 
