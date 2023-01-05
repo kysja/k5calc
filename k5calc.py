@@ -80,7 +80,7 @@ config['font_main'] = cp.get('settings', 'font_main')
 
 win = tk.Tk()
 win.title("K5calc - Simple Calculator")
-win.iconbitmap('k5calc.ico')
+win.iconbitmap('images/k5calc.ico')
 win.resizable(0,0)
 win.configure(background=config['bgcolor'])
 win.overrideredirect(1)
@@ -91,7 +91,7 @@ win.bind('<Escape>', lambda x: winhideshow())
 keyboard.add_hotkey(config['hotkey'], winhideshow)
 
 
-logoimg = tk.PhotoImage(file="logo.png")
+logoimg = tk.PhotoImage(file="images/logo.png")
 logo = tk.Label(win, image = logoimg, background=config['bgcolor'])
 logo.grid(row=2, column=1, padx=(20,5), pady=20, sticky="w")
 logo.bind('<Button-1>',clickwin)
@@ -109,16 +109,16 @@ history = []
 histlabels = []
 
 histbtn = tk.Button(win, text="History", command=historytoggle, relief="flat")
-histbtnimg = tk.PhotoImage(file="history.png")
+histbtnimg = tk.PhotoImage(file="images/history.png")
 histbtn.config(image=histbtnimg)
 
 minbtn = tk.Button(win, text="Minimize", command=winhideshow, relief="flat")
-minimg = tk.PhotoImage(file="min.png")
+minimg = tk.PhotoImage(file="images/min.png")
 minbtn.config(image=minimg)
 minbtn.grid(row=2, column=4, padx=5, pady=20, sticky="w")
 
 closebtn = tk.Button(win, text="Close", command=lambda: win.destroy(), relief="flat")
-closebtnimg = tk.PhotoImage(file="close.png")
+closebtnimg = tk.PhotoImage(file="images/close.png")
 closebtn.config(image=closebtnimg)
 closebtn.grid(row=2, column=5, padx=(5,20), pady=20, sticky="w")
 
