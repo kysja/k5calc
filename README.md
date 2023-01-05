@@ -1,6 +1,6 @@
-# k5calc - Simple Windows Keyboard Calculator
+# K5Calc - Simple Windows Keyboard Calculator
 
-k5calc is a simple Windows keyboard calculator built with Python and the Tkinter framework. 
+K5Calc is a simple Windows keyboard calculator built with Python and the Tkinter framework. 
 It allows you to perform basic arithmetic calculations using only your keyboard, without the need to click on a calculator app.
 
 ![k5calc](https://user-images.githubusercontent.com/55608637/210726044-781792aa-d267-41f0-8691-294226ce9925.png)
@@ -44,9 +44,9 @@ It allows you to perform basic arithmetic calculations using only your keyboard,
 
 ## Credits
 
-k5calc was developed by Alex Ulogov.
+K5Calc was developed by Alex Ulogov.
 
 ## License
 
-k5calc is released under the [MIT License](https://github.com/kysja/k5calc/blob/b65da43aa81a42fc4ad7d41a44fe1d748319d140/LICENSE).
+K5Calc is released under the [MIT License](https://github.com/kysja/k5calc/blob/b65da43aa81a42fc4ad7d41a44fe1d748319d140/LICENSE).
 
