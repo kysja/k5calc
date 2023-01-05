@@ -3,7 +3,6 @@ import keyboard
 from slylib import CalcLexer, CalcParser
 from configparser import ConfigParser
 
-
 def enter(event):
     val = entry.get()
     

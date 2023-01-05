@@ -8,22 +8,29 @@ It allows you to perform basic arithmetic calculations using only your keyboard,
 
 ## Features
 
-- Perform basic arithmetic calculations (addition, subtraction, multiplication, division)
+- Perform basic arithmetic calculations (addition, subtraction, multiplication, division, power of n, square root)
 - Use the keyboard to enter numbers and operators
 - Display the calculation history and results
-- Hotkey to show and hide the calculator / **Ctrl-Alt-C**
-- hit <Enter> to get result
+- Customizable hotkey to show and hide the calculator 
+- For lexing and parsing, the [SLY](https://sly.readthedocs.io/en/latest/sly.html) library was used.
 
 
 ## Download
 
 1. [Download](https://github.com/kysja/k5calc/raw/master/download/k5calc.zip) zip file 
 2. Extract the zip file to a local directory
-3. (Optional) Open config.ini and change default hotkey to show and hide the calculator
+3. (Optional) Open config.ini and change the hide/show calculator hotkey (Default - **Ctrl-Alt-C**)
 3. Run **k5calc.exe**
 
+## How to use
 
-## Operators
+- The default hotkey to hide/show the calculator is **Ctrl-Alt-C**
+- Press **<Enter>** to get the result of calculation
+- After the second calculation, a history button will appear
+- Use **config.ini** to set the hide/show hotkey, background color, and fonts
+- See the list of supported operators below
+
+### Operators
 
 - a+b : Addition
 - a-b : Subtraction
@@ -31,6 +38,7 @@ It allows you to perform basic arithmetic calculations using only your keyboard,
 - a/b : Division
 - a^n : Power of N
 - sqrt(a) : Square root
+- (a+b) : Parentheses
 
 
 
