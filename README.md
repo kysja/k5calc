@@ -40,5 +40,5 @@ k5calc was developed by Alex Ulogov.
 
 ## License
 
-k5calc is released under the [MIT License](https://chat.openai.com/chat/LICENSE).
+k5calc is released under the [MIT License](https://github.com/kysja/k5calc/blob/b65da43aa81a42fc4ad7d41a44fe1d748319d140/LICENSE).
 
